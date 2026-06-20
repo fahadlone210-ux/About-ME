@@ -1,0 +1,205 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#1d3557;
+}
+
+header{
+background:#1d3557;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.tagline{
+margin-top:10px;
+}
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+padding:50px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #457b9d;
+}
+
+.intro{
+max-width:500px;
+}
+
+.card{
+background:white;
+margin:20px auto;
+width:85%;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.social-box{
+text-align:center;
+padding:20px;
+}
+
+.social-box img{
+width:100px;
+height:100px;
+object-fit:contain;
+margin-bottom:15px;
+transition:0.3s;
+}
+
+.social-box img:hover{
+transform:scale(1.1);
+}
+
+.social-btn{
+background:#1d3557;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+margin-top:10px;
+transition:0.3s;
+}
+
+.social-btn:hover{
+transform:translateY(-3px);
+}
+
+
+.order-section{
+text-align:center;
+padding:50px;
+}
+
+.order-section button{
+background:#1d3557;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:7px;
+cursor:pointer;
+font-size:18px;
+}
+
+.order-section button:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:#1d3557;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+.form-container{
+width:80%;
+max-width:600px;
+margin:50px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.form-container input,
+.form-container select{
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.buttons button{
+flex:1;
+padding:12px;
+background:#1d3557;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:8px;
+}
+
+.fun-btn{
+background:crimson;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+margin-top:15px;
+}
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.popup-content{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+width:400px;
+max-width:90%;
+}
+
+.popup-content button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#1d3557;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}

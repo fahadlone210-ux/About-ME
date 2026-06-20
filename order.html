@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Website Ordering Center 🚀</h1>
+    <p>Professional Websites With Professional Nonsense</p>
+</header>
+
+<div class="form-container">
+
+
+<h2>Order Your Dream Website</h2>
+
+<form>
+
+    <input type="text" placeholder="First Name" required>
+
+    <input type="text" placeholder="Surname" required>
+
+    <input type="email" placeholder="Email Address" required>
+
+    <input type="tel" placeholder="Phone Number" required>
+
+    <label>Select Payment Method</label>
+
+    <select id="payment">
+
+        <option>Select Payment</option>
+
+        <option>JazzCash </option>
+        <option>EasyPaisa</option>
+
+    </select>
+
+    <div id="scamMessage"></div>
+
+    <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+
+</form>
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <h1>😂 YOU GOT SCAMMED 😂</h1>
+
+        <p>
+            Congratulations!<br>
+            Your website order has been sent directly to the Scam Department 🤣
+        </p>
+
+        <button onclick="closePopup()">
+            Okay 😭
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    document.getElementById("popup").style.display = "flex";
+
+});
+
+function closePopup(){
+
+    document.getElementById("popup").style.display = "none";
+
+}
+
+</script>
+
+
+</body>
+</html>
